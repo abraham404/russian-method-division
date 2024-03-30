@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>División</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="container-head">
+        <h1>División con el método Ruso</h1>
+        <div>
+          <img src="images/division.jpg" alt="" id="division-img" />
+        </div>
+        <input
+          class="input-number"
+          id="input-dividendo"
+          type="text"
+          placeholder="Ingrese el dividendo"
+        />
+
+        <input
+          class="input-number"
+          id="input-divisor"
+          type="text"
+          placeholder="Ingrese el divisor"
+        />
+      </div>
+      <button class="btn" id="btn-calculate" onclick="start()">Calcular</button>
+      <button class="btn" onclick="removeHTMLTags()">Limpiar</button>
+      <div id="mult-list"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

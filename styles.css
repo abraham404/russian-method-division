@@ -1,0 +1,79 @@
+body {
+  text-align: center;
+  background: #2c2a2a;
+}
+
+#container {
+  text-align: center;
+  display: block;
+}
+
+p,
+h1 {
+  color: #fff;
+}
+.input-number {
+  margin: 12px;
+  padding: 12px;
+}
+
+#division-img {
+  width: 300px;
+  height: 150px;
+  display: auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  border-radius: 12px;
+  background: black;
+  padding: 7px 32px;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    red,
+    blue,
+    #93ff14,
+    blue,
+    red,
+    blue,
+    #93ff14,
+    blue
+  );
+  background-size: 800%;
+  border: 10px;
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-color: 0, 0;
+  }
+}
